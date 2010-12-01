@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Error Log: ${date}</title>
+<style type="text/css">
+<!--
+	html, body {
+		font-family: "HelveticaNeue-Roman", "Helvetica 55 Roman", Helvetica, Arial, sans-serif;
+		font-size: 13px;
+		padding: 8px;
+		color: #666;
+	}
+	header {
+		margin: 8px 0;
+		line-height: 24px;
+	}
+	header h1 {
+		color: #111;
+		font-size: 16px;
+		display: inline;
+	}
+	header h1 span {
+		font-size: 12px;
+		font-weight: normal;
+		color: #999;
+	}
+	
+	header a {
+		float: right;
+	}
+	h2 {
+		color: #111;
+		font-size: 14px;
+	}
+	a {
+		color: #FF0080;
+		text-decoration: none;
+	}
+	pre {
+		padding: 4px;
+		line-height: 20px;
+		background-color: #333;
+		color: #fff;
+	}
+	p, pre {
+		margin: 20px;
+	}
+	pre span {
+		color: #111;
+		font-size: 16px;
+		font-weight: bold;
+		background-color: #fff;
+	}
+	.error {
+		border-top: 1px dotted #ccc;
+		padding: 12px;
+	}
+	.error:hover {
+		background-color: #eaeaea;
+	}
+-->
+</style>
+</head>
+<body>
+	<header>
+		<h1>Error Log: <span>${date}</span></h1>
+		<a href="javascript:openLog()">Open in Default Application</a>
+	</header>
+	${errors}
+</body>
+</html>
