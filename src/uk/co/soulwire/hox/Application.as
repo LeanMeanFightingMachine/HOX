@@ -26,7 +26,7 @@ package uk.co.soulwire.hox
 		//	CONSTANTS
 		//	----------------------------------------------------------------
 		
-		public static const UPDATE_URL : String = "https://github.com/LeanMeanFightingMachine/HOX/raw/master/version.xml";
+		public static const UPDATE_URL : String = "https://github.com/LeanMeanFightingMachine/HOX/raw/master/version.xml";		//public static const UPDATE_URL : String = "file:///Users/justin/Dropbox/Workspace/Flash/HOX/version.xml";		//public static const UPDATE_URL : String = "file:///Volumes/Workspace/Dropbox/Workspace/Flash/HOX/version.xml";
 		
 		//	----------------------------------------------------------------
 		//	PRIVATE MEMBERS

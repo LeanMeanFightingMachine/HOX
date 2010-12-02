@@ -27,7 +27,7 @@
         <image48x48>icons/png/48x48.png</image48x48>
         <image128x128>icons/png/128x128.png</image128x128>
     </icon>
-    <customUpdateUI>true</customUpdateUI>
+    <customUpdateUI>false</customUpdateUI>
     <allowBrowserInvocation>false</allowBrowserInvocation>
     <supportedProfiles>extendedDesktop desktop</supportedProfiles>
     <fileTypes>

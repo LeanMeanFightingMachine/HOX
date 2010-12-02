@@ -49,9 +49,20 @@ package uk.co.soulwire.air
 		public function checkForUpdates(updateURL : String) : void
 		{
 			_updater.addEventListener(UpdateEvent.INITIALIZED, onUpdaterInitialised);
+			_updater.addEventListener(UpdateEvent.DOWNLOAD_START, onDownloadStarted);			_updater.addEventListener(UpdateEvent.DOWNLOAD_COMPLETE, onDownloadComplete);
 			_updater.addEventListener(StatusUpdateEvent.UPDATE_STATUS, onUpdateStatus);			_updater.addEventListener(StatusUpdateErrorEvent.UPDATE_ERROR, onUpdateError);
 			_updater.updateURL = updateURL;
 			_updater.initialize();
+		}
+
+		private function onDownloadComplete(event : UpdateEvent) : void
+		{
+			trace("onDownloadComplete", event);
+		}
+
+		private function onDownloadStarted(event : UpdateEvent) : void
+		{
+			trace("onDownloadStarted", event);
 		}
 		
 		//	----------------------------------------------------------------

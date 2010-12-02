@@ -10,14 +10,18 @@
 	website  : http://www.beautifycode.com
 	date	 : 14.08.2010
 	
+	edit by  : Justin Windle
+	website  : http://www.soulwire.co.uk
+	date	 : 24.11.2010
+	
 	This Build-file is working with FlexSDK 4.1.0.16076 and AIR 2.0.2.12610
 	
 ******************************************************************************************************** -->
 
-<project default="1. Cleanup Directories" name="Build AIR2">
+<project default="1. Cleanup Directories" name="Build AIR 2.0">
 	<!-- Path to Flex 4.1 SDK -->
-	<property name="sdk_dir" value="/Volumes/Workspace/Library/AS3/SDK/flex_sdk_4.1.0.16076" />
-	<!--<property name="sdk_dir" value="/Applications/FDT/plugins/com.powerflasher.fdt.shippedFlexSDK_4.1.0.16076/flex" />-->
+	<!--<property name="sdk_dir" value="/Volumes/Workspace/Library/AS3/SDK/flex_sdk_4.1.0.16076" />-->
+	<property name="sdk_dir" value="/Applications/FDT/plugins/com.powerflasher.fdt.shippedFlexSDK_4.1.0.16076/flex" />
 	<property name="mxmlc" value="${sdk_dir}/lib/mxmlc.jar" />
 	<property name="adl" value="${sdk_dir}/bin/adl" />
 	<property name="adt" value="${sdk_dir}/lib/adt.jar" />
