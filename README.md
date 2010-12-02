@@ -4,7 +4,7 @@
 About HOX
 -----
 
-![HOX Screenshot](http://soulwire.co.uk/files/drag-file.jpg)
+![HOX Screenshot](https://github.com/LeanMeanFightingMachine/HOX/raw/master/assets/img/screenshots/drag-file.jpg)
 
 HOX is an Air application built from several small modules, each designed to serve as useful time-saving components in your web development workflow.
 
@@ -29,6 +29,7 @@ The __Minify__ module uses the [Google Closure Compiler](http://code.google.com/
 
 JavaScript syntax is also checked and if minification cannot take place due to code errors, an error log window will appear providing detailed feedback.
 
+![HOX Error Log](https://github.com/LeanMeanFightingMachine/HOX/raw/master/assets/img/screenshots/error-log.jpg)
 
 ---------------------------------------
 
