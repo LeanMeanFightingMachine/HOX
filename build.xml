@@ -167,7 +167,7 @@
 		</java>
 	</target>
 	
-	<target name="9a. Package to DMG" depends="7. Package Application">
+	<target name="9. Package Native Installers" depends="7. Package Application">
 		<java jar="${adt}" fork="true" failonerror="true" maxmemory="512m">
 			<arg value="-package"/>
 			<arg value="-target"/>
@@ -175,14 +175,25 @@
 			<arg value="${publish_dir}/${app_name}.dmg"/>
 			<arg value="${publish_dir}/${air_file}"/>            
 		</java>
-	</target>
-	
-	<target name="9b. Package to EXE" depends="7. Package Application">
 		<java jar="${adt}" fork="true" failonerror="true" maxmemory="512m">
 			<arg value="-package"/>
 			<arg value="-target"/>
 			<arg value="native"/>
 			<arg value="${publish_dir}/${app_name}.exe"/>
+			<arg value="${publish_dir}/${air_file}"/>            
+		</java>
+		<java jar="${adt}" fork="true" failonerror="true" maxmemory="512m">
+			<arg value="-package"/>
+			<arg value="-target"/>
+			<arg value="native"/>
+			<arg value="${publish_dir}/${app_name}.deb"/>
+			<arg value="${publish_dir}/${air_file}"/>            
+		</java>
+		<java jar="${adt}" fork="true" failonerror="true" maxmemory="512m">
+			<arg value="-package"/>
+			<arg value="-target"/>
+			<arg value="native"/>
+			<arg value="${publish_dir}/${app_name}.rpm"/>
 			<arg value="${publish_dir}/${air_file}"/>            
 		</java>
 	</target>

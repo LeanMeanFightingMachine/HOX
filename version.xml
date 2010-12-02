@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update xmlns="http://ns.riaspace.com/air/framework/update/description/1.1">
+
+	<!-- Mac update -->
+	<dmg>
+		<version>1.0</version>
+		<url>https://github.com/LeanMeanFightingMachine/HOX/raw/master/publish/hox.dmg</url>
+		<description>
+		<![CDATA[
+			* This a Mac update
+		]]>
+		</description>
+	</dmg>
+	
+	<!-- Win update -->
+	<exe>
+		<version>1.0</version>
+		<url>https://github.com/LeanMeanFightingMachine/HOX/raw/master/publish/hox.exe</url>
+		<description>
+		<![CDATA[
+			* This a Win update
+		]]>
+		</description>
+	</exe>
+	
+	<!-- Debian update -->
+	<deb>
+		<version>1.0</version>
+		<url>https://github.com/LeanMeanFightingMachine/HOX/raw/master/publish/hox.deb</url>
+		<description>
+		<![CDATA[
+			* This a Debian update
+		]]>
+		</description>
+	</deb>
+	
+	<!-- Redhat/Fedora/OpenSUSE update -->
+	<rpm>
+		<version>1.0</version>
+		<url>https://github.com/LeanMeanFightingMachine/HOX/raw/master/publish/hox.rpm</url>
+		<description>
+		<![CDATA[
+			* This a Redhat/Fedora/OpenSUSE update
+		]]>
+		</description>
+	</rpm>
+        
+</update>

@@ -23,6 +23,12 @@ package uk.co.soulwire.hox
 	public class Application extends AbstractApplication
 	{
 		//	----------------------------------------------------------------
+		//	CONSTANTS
+		//	----------------------------------------------------------------
+		
+		public static const UPDATE_URL : String = "https://github.com/LeanMeanFightingMachine/HOX/raw/master/version.xml";
+		
+		//	----------------------------------------------------------------
 		//	PRIVATE MEMBERS
 		//	----------------------------------------------------------------
 		
@@ -37,7 +43,7 @@ package uk.co.soulwire.hox
 		public function Application()
 		{
 			super();
-			//checkForUpdates("http://soulwire.co.uk/files/update.xml");
+			checkForUpdates(UPDATE_URL);
 			addChild(_container);
 		}
 		

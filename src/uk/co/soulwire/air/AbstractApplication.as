@@ -8,6 +8,10 @@
  **/
 package uk.co.soulwire.air
 {
+	import air.update.events.StatusUpdateErrorEvent;
+	import air.update.events.StatusUpdateEvent;
+	import flash.events.ErrorEvent;
+	import flash.events.IOErrorEvent;
 	import air.update.events.UpdateEvent;
 	import com.riaspace.nativeApplicationUpdater.NativeApplicationUpdater;
 
@@ -45,6 +49,7 @@ package uk.co.soulwire.air
 		public function checkForUpdates(updateURL : String) : void
 		{
 			_updater.addEventListener(UpdateEvent.INITIALIZED, onUpdaterInitialised);
+			_updater.addEventListener(StatusUpdateEvent.UPDATE_STATUS, onUpdateStatus);			_updater.addEventListener(StatusUpdateErrorEvent.UPDATE_ERROR, onUpdateError);
 			_updater.updateURL = updateURL;
 			_updater.initialize();
 		}
@@ -66,6 +71,19 @@ package uk.co.soulwire.air
 		//	----------------------------------------------------------------
 		//	EVENT HANDLERS
 		//	----------------------------------------------------------------
+		
+		private function onUpdateStatus(event : StatusUpdateEvent) : void
+		{
+			trace("onUpdateStatus");
+			trace(event.version);
+			trace(event.details);
+		}
+
+		private function onUpdateError(event : StatusUpdateErrorEvent) : void
+		{
+			trace("onUpdateError");
+			trace(event.errorID);			trace(event.text);
+		}
 		
 		private function onUpdaterInitialised(event : UpdateEvent) : void
 		{
